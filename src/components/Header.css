@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    background-color: #003a50;
+    height: 10vh;
+    padding: 2%;
+   justify-content: space-between;
+   align-items: center;
+} 
+
+.navbar{
+    display: flex;
+    width: 70%;
+  
+    justify-content: space-between;
+}
+.navbar-items{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    width:70%;
+    justify-content: space-between;
+    padding-inline: 0%;
+    font-weight: 400;
+
+}
+
+
+.login-button{
+    padding-inline: 2%;
+    color: #003a50;
+    text-transform: uppercase;
+    letter-spacing: 0.5cap;
+    font-weight: 800;
+    border-radius: 25px;
+    padding-top:1%;
+    padding-bottom: 1%;
+}
