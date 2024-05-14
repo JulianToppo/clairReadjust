@@ -1,0 +1,49 @@
+.trusties{
+    display: flex;
+    flex-direction: column;
+    background-color:#003a50;
+    align-items: center;
+    padding: 10%;
+    color:white
+    
+
+}
+
+.trusties>p{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.inline{
+    display: block;
+    object-fit:contain;
+    margin: 2%;
+    filter:contrast(30%)
+
+}
+.companies{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    
+    object-fit: cover;
+}
+
+.flex{
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+   
+    width: 100%;
+    flex-wrap: wrap;
+  
+}
+
+.margin{
+    margin-top:-30%;
+    margin-bottom:-30%;
+}
+
+.outergroup{
+    display:flex;
+}
