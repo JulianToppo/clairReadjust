@@ -3,6 +3,7 @@ import React from "react";
 import Introduction from "./components/Introduction";
 import Trusties from "./components/Trusties";
 import OptimiseInfo from "./components/OptimiseInfo";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Introduction/>
       <Trusties/>
       <OptimiseInfo/>
+
+      <ContactUs/>
     </div>
   );
 }

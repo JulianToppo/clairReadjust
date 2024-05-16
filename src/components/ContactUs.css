@@ -1,0 +1,69 @@
+.contactinfo {
+    display: flex;
+    background-color: #003a50;
+    justify-content: center;
+    
+    padding-top: 25%;
+    color: white;
+
+}
+
+.contact-sec1 {
+    width: 35%;
+}
+
+.contact-sec1>ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-sec1>ul>li>div>img {
+    width: 100%;
+    height: 100%;
+    
+    filter: invert();
+   
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    gap: 3%;
+    margin: 2%;
+
+}
+
+.info>p {
+    line-height: 0.1;
+}
+
+.info-sections{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.phonenum{
+    background-color: #4e6bbc;
+    padding: 2%;
+    border-radius: 50%;
+    width:5%;
+    height:5%;
+}
+
+.emailing{
+    background-color:#fe4f58;
+    padding: 2%;
+    border-radius: 50%;
+    width:5%;
+    height:5%;
+}
+
+.location{
+    background-color:#1e748a;
+    padding: 2%;
+    border-radius: 50%;
+    width:5%;
+    height:5%;
+}
