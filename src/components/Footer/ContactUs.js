@@ -1,7 +1,11 @@
 import React from "react";
 import style from "./ContactUs.module.css";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
+  function handleClick() {
+    window.scrollTo(0, 0);
+}
   return (
     <div className={style.outerflex }>
       <div className={style.contactinfo}>
@@ -57,7 +61,7 @@ const ContactUs = () => {
         <h3>Resources</h3>
 
         <div className={style.resourcelist}>
-          <p>Career</p>
+          <p><Link className={style.link} to="/career" onClick={handleClick}>Career</Link></p>
           <p>Blogs</p>
           <p>Our Solution</p>
           <p>About Us</p>
