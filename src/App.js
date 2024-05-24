@@ -1,9 +1,11 @@
-import Header from "./components/Header";
+
 import React from "react";
-import Introduction from "./components/Introduction";
-import Trusties from "./components/Trusties";
-import OptimiseInfo from "./components/OptimiseInfo";
-import ContactUs from "./components/ContactUs";
+import Header from "./components/Header/Header";
+import Introduction from "./components/Introduction/Introduction";
+import Trusties from "./components/Introduction/Trusties";
+import OptimiseInfo from "./components/OptimiseInfo/OptimiseInfo";
+import ContactUs from "./components/Footer/ContactUs";
+
 
 function App() {
   return (
@@ -12,7 +14,6 @@ function App() {
       <Introduction/>
       <Trusties/>
       <OptimiseInfo/>
-
       <ContactUs/>
     </div>
   );

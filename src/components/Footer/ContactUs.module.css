@@ -1,0 +1,141 @@
+.contactinfo {
+    display: flex;
+    background-color: #003a50;
+    justify-content: space-around;
+    padding-inline:5%;
+    padding-top: 25%;
+    color: white;
+
+}
+
+.copyright{
+    display: flex;
+    background-color: #003a50;
+    padding-top: 2%;
+    padding-inline:5%;
+    color: white;
+
+    justify-content: center;
+    letter-spacing: 0.1cap;
+
+}
+
+.contact_sec1 {
+    width: 30%;
+}
+
+.contact_sec1>ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact_sec1>ul>li>div>img {
+    width: 100%;
+    height: 100%;
+
+    filter: invert();
+
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    gap: 3%;
+    margin: 2%;
+
+}
+
+.info>p {
+    line-height: 0.1;
+}
+
+.info_sections {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.phonenum {
+    background-color: #4e6bbc;
+    padding: 2%;
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+}
+
+.emailing {
+    background-color: #fe4f58;
+    padding: 2%;
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+}
+
+.location {
+    background-color: #1e748a;
+    padding: 2%;
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+}
+
+.contact_sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    width: 30%;
+    
+   
+}
+
+.clickResources{
+    padding: 4%;
+   padding-inline:6%;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background-color: #00695c;
+    color: white;
+}
+
+
+.linkedinlogo{
+    width: 20px;
+    height:20px;
+    background-color: #486f9e;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+.contact_sec3{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items:center;
+    justify-items: center;
+
+    
+
+    
+}
+
+
+.resourcelist{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #486f9e; */
+    align-items:center;
+
+    height: 100%;
+  
+}
+
+
+.outerflex{
+    display: flex;
+    flex-direction: column;
+}
