@@ -1,23 +1,48 @@
-import React from "react";
-import "./Header.css";
+import React, { useEffect, useState } from "react";
+import style from "./Header.module.css";
+import Navbar from "./Navbar";
 
 const Header = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+  const [openDropDown,setOpenDropDown]= useState(false)
+
+  const handleResize = () => {
+    if (window.innerWidth < 830) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const ondropDownClickHandler=(e)=>{
+    e.preventDefault();
+    setOpenDropDown(!openDropDown)
+  }
+
   return (
-    <div className="header">
+    <div className={style.header}>
       <img src="./images/logo.png" alt="logo"></img>
-      {/* <div className="navbar">
+      {isMobile ? 
+        openDropDown==true?
+        <Navbar toggleShow={setOpenDropDown} openDropDown={openDropDown} isMobileVersion={isMobile}/>
+          :<img
+          className={style.navbar_dropdown}
+          src={"/images/icons/dropdownsettings.png"}
 
-
-        <ul className="navbar-items">
-          <li>Home</li>
-          <li>Why Clairco?</li>
-          <li>Case Studies</li>
-          <li>About Us</li>
-          <li>Blog</li>
-        </ul>
-
-        <button className="login-button">Login</button>
-      </div> */}
+          onClick={ondropDownClickHandler}
+        ></img>
+       : (
+        <Navbar isMobileVersion={isMobile}/>
+      )}
     </div>
   );
 };

@@ -15,7 +15,7 @@
     justify-content: space-between;
 }
 
-.navbar-items {
+.navbar_items {
     list-style-type: none;
     display: flex;
     color: white;
@@ -27,7 +27,7 @@
 }
 
 
-.login-button {
+.login_button {
     padding-inline: 2%;
     color: #003a50;
     text-transform: uppercase;
@@ -36,6 +36,13 @@
     border-radius: 25px;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+.navbar_dropdown {
+    height: 30px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 @media (max-width:780px) {
@@ -57,14 +64,14 @@
         align-items: center;
     }
 
-    .navbar-items {
+    .navbar_items {
         flex-direction: column;
         color: black;
         align-items: center;
         /* background-color: rgb(13, 163, 113); */
     }
 
-    .navbar-items>li{
+    .navbar_items>li{
         padding: 10%;
     }
 

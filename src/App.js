@@ -18,7 +18,7 @@ function App() {
           element={
             <React.Fragment>
               <Introduction />
-              {/* <Trusties /> */}
+              <Trusties />
               <OptimiseInfo />
               
               <Solutions />
