@@ -88,3 +88,21 @@
         transform: translateY(-10%);
     }
 }
+
+@media (max-width:780px) {
+
+    .solutions{
+        flex-direction: column;
+    }
+    .solutionsSections{
+        width: 100%;
+        
+    }
+    .solutiontagdescription{
+        width: 100%;
+    }
+    .solutiontag{
+        padding-bottom: 10%;
+    }
+ 
+}

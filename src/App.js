@@ -11,7 +11,7 @@ import Career from "./components/Career/Career";
 function App() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route
           path="/"
