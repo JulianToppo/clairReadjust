@@ -93,6 +93,7 @@
 
     .solutions{
         flex-direction: column;
+        justify-content: space-between;
     }
     .solutionsSections{
         width: 100%;
