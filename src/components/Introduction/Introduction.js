@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Introduction.css";
+import style from  "./Introduction.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -47,10 +47,10 @@ const Introduction = () => {
       clearInterval(inc);
       clearInterval(energy);
     };
-  }, []);
+  }, [energyPercentage,increase]);
   return (
-    <div className="intro-body">
-      <div data-aos="fade-up" data-aos-delay="1500" className="intro-section1">
+    <div className={style.intro_body}>
+      <div data-aos="fade-up" data-aos-delay="1500" className={style.intro_section1}>
         <h1>
           <strong>Reduce</strong> <br />
           Energy Consumption
@@ -59,11 +59,11 @@ const Introduction = () => {
           Clairco provides patented technologies that enhance and provide real
           time insights to increase energy efficiency & improve air quality
         </p>
-        <button className="book-button">Book Demo</button>
+        <button className={style.book_button}>Book Demo</button>
       </div>
-      <div data-aos="fade-left" className="intro-section2">
+      <div data-aos="fade-left" className={style.intro_section2}>
         <img src="./images/building.png"></img>
-        <div className="benefits" >
+        <div className={style.benefits} >
           <div data-aos="fade-left" data-aos-delay="2000">
             <text >{`-${emissions}%`}</text>
             <p>in average <br/>PM 2.5 concentrations</p>

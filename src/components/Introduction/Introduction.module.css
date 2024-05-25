@@ -1,4 +1,4 @@
-.intro-body {
+.intro_body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -10,7 +10,7 @@
 
 }
 
-.intro-section1 {
+.intro_section1 {
     width: 50%;
     color: white;
     display: flex;
@@ -19,16 +19,16 @@
 
 }
 
-.intro-section1>h1 {
+.intro_section1>h1 {
     font-size: 3.5rem;
 }
 
-.intro-section1>p {
+.intro_section1>p {
     font-size: 1.5rem;
     font-weight: lighter;
 }
 
-.book-button {
+.book_button {
     color: #003a50;
     border-radius: 20px;
     width: 30%;
@@ -39,14 +39,14 @@
 
 }
 
-.intro-section2 {
+.intro_section2 {
     object-fit: contain;
     width: 40%;
     height: auto;
     color: white;
 }
 
-.intro-section2>img {
+.intro_section2>img {
     object-fit: contain;
     width: 100%;
     height: auto;
@@ -69,27 +69,27 @@
 }
 
 @media (max-width:780px) {
-    .intro-body {
+    .intro_body {
         flex-direction: column;
         padding: 10%;
         width: 80%;
         height: 100%;
     }
 
-    .intro-section1 {
+    .intro_section1 {
         width: 100%;
         padding-bottom: 5%;
       
     }
 
-    .intro-section1>h1 {
+    .intro_section1>h1 {
         font-size: 1.5rem;
     }
 
-    .book-button{
+    .book_button{
         width: 60%;
     }
-    .intro-section2{
+    .intro_section2{
         width: 100%;
     }
     .benefits>div>text{
