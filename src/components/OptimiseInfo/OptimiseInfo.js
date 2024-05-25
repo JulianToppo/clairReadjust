@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./OptimiseInfo.css";
+import style from "./OptimiseInfo.module.css";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
@@ -12,8 +12,8 @@ const OptimiseInfo = () => {
     });
   }, []);
   return (
-    <div className="optimiseinfo">
-      <div  className="info-1">
+    <div className={style.optimiseinfo}>
+      <div  className={style.info_1}>
         <h2 data-aos="fade-up" data-aos-delay="100">Optimize Energy Savings With Us</h2>
         <p data-aos="fade-up" data-aos-delay="50">
           Heating Ventilation and Air-conditioning (HVAC) system consumes almost
@@ -30,7 +30,7 @@ const OptimiseInfo = () => {
           buildings achieve energy efficiency.
         </p>
       </div>
-      <div  data-aos="fade-up" data-aos-delay="300" className="info-2">
+      <div  data-aos="fade-up" data-aos-delay="300" className={style.info_2}>
         <img src="./images/dashboard.png" alt="dashboard"></img>
       </div>
     </div>
