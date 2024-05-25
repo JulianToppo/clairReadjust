@@ -66,17 +66,17 @@ const Introduction = () => {
         <div className="benefits" >
           <div data-aos="fade-left" data-aos-delay="2000">
             <text >{`-${emissions}%`}</text>
-            <p>in average PM concentrations</p>
+            <p>in average <br/>PM 2.5 concentrations</p>
           </div>
 
           <div data-aos="fade-left" data-aos-delay="2500">
             <text >12%</text>
-            <p>increase in productivity</p>
+            <p>increase in<br/> productivity</p>
           </div>
 
           <div data-aos="fade-left" data-aos-delay="3000">
             <text >{`-${counter}%`}</text>
-            <p >Energy optimization</p>
+            <p >Energy <br/>optimization</p>
           </div>
         </div>
       </div>

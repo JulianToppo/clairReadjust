@@ -1,7 +1,8 @@
 .intro-body {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+   
     width: 100%;
     background-color: #003a50;
     /* background-color: aqua; */
@@ -41,17 +42,20 @@
 .intro-section2 {
     object-fit: contain;
     width: 40%;
+    height: auto;
     color: white;
 }
 
 .intro-section2>img {
     object-fit: contain;
     width: 100%;
+    height: auto;
 }
 
 .benefits {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    /* background-color: #00e3aa; */
 }
 
 .benefits>div>text {
@@ -62,4 +66,33 @@
 
 .benefits>div>p {
     margin-top: -3%;
+}
+
+@media (max-width:780px) {
+    .intro-body {
+        flex-direction: column;
+        padding: 10%;
+        width: 80%;
+        height: 100%;
+    }
+
+    .intro-section1 {
+        width: 100%;
+        padding-bottom: 5%;
+      
+    }
+
+    .intro-section1>h1 {
+        font-size: 1.5rem;
+    }
+
+    .book-button{
+        width: 60%;
+    }
+    .intro-section2{
+        width: 100%;
+    }
+    .benefits>div>text{
+        font-size: 1rem;
+    }
 }

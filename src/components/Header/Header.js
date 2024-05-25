@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <div className="header">
       <img src="./images/logo.png" alt="logo"></img>
-      <div className="navbar">
+      {/* <div className="navbar">
+
+
         <ul className="navbar-items">
           <li>Home</li>
           <li>Why Clairco?</li>
@@ -15,7 +17,7 @@ const Header = () => {
         </ul>
 
         <button className="login-button">Login</button>
-      </div>
+      </div> */}
     </div>
   );
 };

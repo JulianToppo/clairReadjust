@@ -11,15 +11,16 @@ import Career from "./components/Career/Career";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route
           path="/"
           element={
             <React.Fragment>
               <Introduction />
-              <Trusties />
+              {/* <Trusties /> */}
               <OptimiseInfo />
+              
               <Solutions />
             </React.Fragment>
           }
